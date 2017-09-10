@@ -1,0 +1,324 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+}
+ul {
+    list-style-type: none;
+}
+
+li {
+    float: left;
+}
+
+hr {
+    height: 1px;
+    border: 0;
+}
+
+header{
+    display: flex;
+
+}
+.header div{
+    display: inline-block;
+}
+.logoMars{
+    width: 3%;
+    height: 5%;
+    margin-top: 3%;
+    margin-left: 3%;
+}
+.logoTel{
+    width: 10px;
+    height: 5%;
+    margin-top: 3%;
+    margin-left: 2%;
+}
+.numTel{
+    width: 400px;
+    height: 5%;
+    margin-top: 3%;
+    color: #98a6aa;
+}
+.phantom{
+    margin: 0;
+    height: 800px;
+    display: flex;
+}
+
+.phantomLeft, .phantomCenter, .phantomRight{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+
+.phantom .phantomLeft{
+    background-color: #eff2f6;
+    flex-basis: 70%;
+
+}
+.phantomCenter{
+    width: 0px;
+}
+
+.phantomCenter img{
+    z-index: 1000;
+}
+
+.phantomRight{
+    background-color: #ff343d;
+    flex-basis: 30%;
+}
+
+.textPhantom span{
+    font-family: Myriad Pro;
+    color: grey;
+    font-weight: 200;
+}
+
+
+
+
+.container{
+    display: flex;
+    flex-basis: 100%;
+    position: relative;
+
+    flex-wrap: wrap;
+    /* A DELETE */
+    border: 1px solid #f00;
+}
+
+.tapFly{
+    display: flex;
+    flex-basis: 30%;
+    background: url("../img/TapToFly.png") no-repeat right;
+    background-size: 100%;
+}
+.textTapFly{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30%;
+    margin-left: 60px;
+    font-size: 35px;
+    align-items: center;
+    width: 100%;
+}
+#textLorem{
+    margin-right: 20%;
+    color: #c7ced1;
+    font-size: 10px;
+    margin-bottom: 15%;
+}
+.flyHigh{
+    display: flex;
+    flex-basis: 70%;
+    background: url("../img/FlyHigh.png") no-repeat right;
+    background-size: 100%;
+}
+.textFlyHigh{
+    display: flex;
+    flex-direction: column;
+    margin-top: 13%;
+    margin-left: 60px;
+    font-size: 35px;
+    width: 100%;
+    color: white;
+}
+.btnViewMoreBlack {
+    background-color: white;
+    border-color: transparent;
+    color: black;
+    border-radius: 28px;
+    width: 10%;
+    margin-bottom: 100px;
+    margin-left: 85%;
+    transform: rotate(-90deg);
+}
+
+.newGen > img{
+    width: 100%;
+    height: 450px;
+}
+
+
+.textCenter{
+    flex-basis: 100%;
+    text-align: center;
+}
+.features{
+    display: flex;
+}
+.icon{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+    align-content: center;
+    height: 150px;
+}
+.icon > img{
+    height: 80px;
+}
+
+
+.newGen{
+    display: flex;
+    flex-basis: 50%;
+}
+.textRed{
+    color: red;
+}
+.textWhite{
+    color: white;
+}
+.newGenImg{
+    display: flex;
+    flex-basis: 50%;
+    background: #232323 url("../img/icon.png") no-repeat right;
+    background-size: 50% 70%;
+}
+.newGenText > h2 {
+    margin-top: 45%; /*150px;*/
+    margin-left: 60px;
+    font-size: 35px;
+}
+.btnViewMore{
+    background: transparent;
+    border-radius: 28px;
+    color: white;
+    padding: 5%;
+    margin-left: 60px;
+    /*border-color: #363636;*/
+}
+
+.newFly{
+    display: flex;
+    flex-basis: 50%;
+}
+.btnProducts{
+    background: transparent;
+    border-radius: 28px;
+    padding: 5%;
+    border-color: #f4f6f9;
+    margin-left: 16%;
+    margin-bottom: 25%;
+}
+.imgDrone{
+    display: flex;
+    flex-basis: 50%;
+    background: url("../img/drone2.png") no-repeat right;
+    background-size: 70% 70%;
+}
+
+.startJourney{
+    display: flex;
+    flex-basis: 100%;
+    background: url("../img/StartJourney.png") no-repeat;
+    background-size: 100%;
+    min-height: 658px;
+}
+
+@media screen and (max-width: 1080px) {
+    .startJourneyText > h2 {
+        margin-top: 65%; /*150px;*/
+        margin-left: 380px;
+        font-size: 35px;
+    }
+
+    .btnViewMoreWhite {
+        background-color: white;
+        border-color: transparent;
+        color: #459780;
+        border-radius: 28px;
+        margin-left: 75%;
+        margin-bottom: 50px;
+        padding: 1%;
+        width: 16%;
+    }
+
+    .footer{
+        height: 400px;
+    }
+    .imgFooter{
+        display: flex;
+        flex-basis: 100%;
+        margin-left: 550px;
+        margin-top: 100px;
+    }
+    .textCopy{
+        margin-left: 400px;
+        margin-top: 30px;
+        color: #a1adb1;
+    }
+    .navBar{
+        display: inline-flex;
+        position: absolute;
+        width: 1080px;
+    }
+    .buyNom{
+        margin-top: 3%;
+        margin-left: 30%;
+        width: 100px;
+        color: white;
+    }
+    .hamburger{
+        margin-top: 3%;
+        width: 15px;
+        height: 15px;
+    }
+}
+
+@media screen and (min-width: 1080px) {
+    .startJourneyText > h2 {
+        margin-top: 65%;
+        width: 1080px;
+        margin-left: 66%;
+        font-size: 35px;
+    }
+
+    .btnViewMoreWhite {
+        background-color: white;
+        border-color: transparent;
+        color: #459780;
+        border-radius: 28px;
+        margin-left: 78%;
+        margin-bottom: 50px;
+        padding: 1%;
+        width: 16%;
+    }
+
+    .footer{
+        height: 400px;
+    }
+    .imgFooter{
+        display: flex;
+        flex-basis: 100%;
+        margin-left: 850px;
+        margin-top: 150px;
+    }
+    .textCopy{
+        margin-left: 700px;
+        margin-top: 30px;
+        color: #a1adb1;
+    }
+    .navBar{
+        display: inline-flex;
+        position: absolute;
+        width: 1600px;
+    }
+    .buyNom{
+        margin-top: 3%;
+        margin-left: 60%;
+        width: 100px;
+        color: white;
+    }
+    .hamburger{
+        margin-top: 3%;
+        width: 15px;
+        height: 15px;
+    }
+}
